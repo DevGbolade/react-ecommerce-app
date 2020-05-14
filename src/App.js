@@ -18,14 +18,6 @@ const HatsPage = (props) => {
 };
 
 class App extends React.Component {
-
-  // constructor(){
-  //   super();
-  //   this.state = {
-  //     currentUser: null
-  //   }
-  // }
-
   unsubscribeFromAuth = null;
 
   componentDidMount() {
@@ -40,11 +32,10 @@ class App extends React.Component {
              ...snapShot.data()
            }
          })
-         console.log(this.state);
          
        })
      }
-     setCurrentUser( userAuth);
+     setCurrentUser(userAuth);
     })
   }
   componentWillUnmount(){
